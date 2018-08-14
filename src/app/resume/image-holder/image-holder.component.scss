@@ -1,0 +1,20 @@
+.image-holder {
+    position: relative;
+    background-color: #000000;
+
+    .profile-image {
+        width: 100%;
+        vertical-align: middle;
+        opacity: 0.5;
+    }
+
+    .name-holder {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+    }
+}

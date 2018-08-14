@@ -1,0 +1,13 @@
+<section class="skills">
+  <p class="title font-size-large"><b><i class="fa fa-asterisk fa-fw app-theme-color"></i>Soft Skills</b></p>
+  <div class="skills-wrapper">
+    <div *ngFor="let skill of skills">
+      <p class="label"> {{ skill.label }}</p>
+      <div class="progress">
+          <div class="determinate" [style.width]='skill.value'></div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</section>
+

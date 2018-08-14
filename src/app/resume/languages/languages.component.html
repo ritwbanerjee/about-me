@@ -1,0 +1,11 @@
+<section class="languages">
+    <p class="title font-size-large"><b><i class="fa fa-globe fa-fw app-theme-color"></i>Languages</b></p>
+    <div class="languages-wrapper">
+        <div *ngFor="let language of languages">
+          <p class="label"> {{ language.label }}</p>
+          <div class="progress">
+              <div class="determinate" [style.width]='language.value'></div>
+          </div>
+        </div>
+      </div>
+  </section>

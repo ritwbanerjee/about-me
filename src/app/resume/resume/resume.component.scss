@@ -4,11 +4,6 @@
 
 .brief {
     @extend %box-shadow;
-    height: 1000px;
-
-    .profile-image {
-        width: 100%;
-    }
 }
 
 .details {
