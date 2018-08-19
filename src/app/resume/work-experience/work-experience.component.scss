@@ -1,0 +1,62 @@
+.work-experience {
+
+    padding:25px;
+
+    .section-title {
+        font-weight: 700;
+        color: #757575;;
+    }
+
+    .title-icon {
+        margin-right: 20px;
+    }
+
+    .collapsible {
+        box-shadow: none;
+        border: none;
+
+        .collapsible-body {
+            padding: 0;
+        }
+    }
+
+    .work-experience-title {
+        color: #757575;
+        display: flex;
+        position: relative;
+        align-items: center;
+        background: none;
+
+        .work-experience-subtitle {
+            margin-left: 15px;
+        }
+
+
+        .work-experience-company-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+        }
+
+        .right-chevron {
+            position: absolute;
+            right: 0;
+            margin-right: 0;
+            color: #757575;
+        }
+    }
+
+    .date-icon {
+        margin-right: 15px;
+    }
+
+    .work-experience-list {
+        list-style-type: disc;
+        height: 100%;
+        padding-left: 15px;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}

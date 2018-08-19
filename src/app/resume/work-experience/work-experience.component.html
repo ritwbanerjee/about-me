@@ -1,0 +1,23 @@
+<section class="app-box-shadow work-experience">
+  <p class="section-title font-size-largest no-row-top-spacing">
+    <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal app-theme-color title-icon font-size-largest"></i>
+    Work Experience
+  </p>
+
+  <ul class="collapsible">
+    <li *ngFor="let item of workExperience">
+      <p class="collapsible-header work-experience-title no-col-gutter bold font-size-medium app-theme-color no-row-bottom-spacing no-row-top-spacing">
+        <img [src]="item.imgUrl" class="work-experience-company-logo"/>
+        {{ item.title }}
+        <i class="fas fa-chevron-right right-chevron font-size-medium"></i>
+      </p>
+      <div class="collapsible-body">
+        <p class="work-experience-subtitle font-size-medium bold no-row-bottom-spacing"> {{ item.company }} </p>
+        <p class="font-size-medium app-theme-color"><i class="fa fa-calendar fa-fw w3-margin-right date-icon font-size-large app-theme-color"></i> {{ item.fromDate }} - <span class="current-date" [ngClass]="{'tag' : item.isCurrent}">{{ item.toDate }}</span></p>
+        <ol class="work-experience-list">
+          <li class="achievement" *ngFor="let achievement of item.achievements">{{ achievement.desc }}</li>
+        </ol>
+      </div>
+    </li>
+  </ul>
+</section>
