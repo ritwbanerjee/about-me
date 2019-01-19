@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+declare var jQuery: any;
 
 @Component({
     selector: 'app-marriage-navbar',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
     styleUrls: ['./navbar.component.scss']
 })
 
-export class NavBarComponent {
+export class NavBarComponent implements AfterViewInit {
 
+    ngAfterViewInit() {
+        jQuery('.sidenav').sidenav();
+    }
 }
