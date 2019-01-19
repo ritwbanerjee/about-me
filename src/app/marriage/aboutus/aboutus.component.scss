@@ -1,0 +1,26 @@
+.banner {
+
+    background-color: white;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 90px 0 20px;
+
+    .section-logo {
+        width: 50%;
+    }
+
+    .banner-title {
+        position: absolute;
+        bottom: 60px;
+    }
+}
+
+.about-us {
+    background-color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'roboto';
+}

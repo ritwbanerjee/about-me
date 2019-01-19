@@ -75,5 +75,9 @@
         height: 260px;
         position: absolute;
         top: 23rem;
+
+        @media (max-width: 768px) {
+            background: none;
+        }
     }
 }
