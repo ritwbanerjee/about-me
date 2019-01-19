@@ -24,7 +24,7 @@
             background: url("../../../assets/milestone.jpg");
             background-size: cover;
             background-repeat: no-repeat;
-            opacity: 0.4;
+            opacity: 0.5;
         }
 
         @media (min-width: 469px) and (max-width: 1024px) {
@@ -79,9 +79,10 @@
         position: absolute;
         top: 23rem;
 
-        @media (max-width: 768px) {
+        @media (max-width: 468px) {
             background-size: contain;
             background-position: center;
+            top: 21rem;
         }
     }
 }
