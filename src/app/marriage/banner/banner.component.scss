@@ -24,12 +24,14 @@
             background: url("../../../assets/milestone.jpg");
             background-size: cover;
             background-repeat: no-repeat;
+            opacity: 0.4;
         }
 
         @media (min-width: 469px) and (max-width: 1024px) {
             background: url("../../../assets/chitradurga-1.jpg");
             background-size: contain;
             background-repeat: no-repeat;
+            opacity: 0.4;
         }
     }
 
