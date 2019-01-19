@@ -1,0 +1,79 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .banner-image {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        background: url("../../../assets/chitradurga-2.jpg");
+        background-size: cover;
+        opacity: 0.3;
+
+        @media (max-width: 468px) {
+            background: url("../../../assets/milestone.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @media (min-width: 469px) and (max-width: 1024px) {
+            background: url("../../../assets/chitradurga-1.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .content-holder {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-custom-title {
+        color: #de037f;
+        z-index: 3;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .banner-title {
+        color: white;
+        z-index: 3;
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+    }
+
+    .text-holder {
+        color: white;
+        text-align: center;
+        position: relative;
+
+        .name {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .date {
+            font-family: 'Roboto';
+        }
+    }
+
+    .slider-img-holder {
+        background: url("../../../assets/hearth_center.svg") no-repeat transparent;
+        background-size: contain;
+        margin: 0 auto;
+        opacity: 0.3;
+        width: 690px;
+        height: 260px;
+        position: absolute;
+        top: 23rem;
+    }
+}
