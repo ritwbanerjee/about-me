@@ -1,5 +1,4 @@
 .banner {
-
     background-color: white;
     margin-top: 5px;
     display: flex;
@@ -7,19 +6,15 @@
     align-items: center;
     position: relative;
     padding: 90px 0 20px;
-
     @media (max-width: 468px) {
-        padding: 20px 20px 0 20px;;
+        padding: 20px 20px 0 20px;
     }
-
     .section-logo {
         width: 50%;
     }
-
     .banner-title {
         position: absolute;
         bottom: 60px;
-
         @media (max-width: 468px) {
             bottom: 0;
             position: relative;
@@ -32,4 +27,39 @@
     text-align: center;
     font-size: 22px;
     font-family: 'roboto';
+}
+
+.profile {
+
+    margin-top: 30px;
+
+    .profile-picture-holder {
+        text-align: center;
+        font-weight: 300;
+        line-height: 1.625em;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        margin-bottom: 40px;
+
+        .profile-picture {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+
+        .sub-title-holder {
+            text-align: center;
+
+            .sub-title {
+                padding: 0 30px;
+                font-family: 'roboto';
+                color: #757575;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 2rem;
+            }
+        }
+    }
 }
