@@ -4,6 +4,7 @@ import { MarriageBaseComponent } from './base/base.component';
 import { MarriageAboutUsComponent } from './aboutus/aboutus.component';
 import { MarriageFamilyComponent } from './family/family.component';
 import { MarriageEventComponent } from './event/event.component';
+import { MarriageRsvpComponent } from './rsvp/rsvp.component';
 
 const routes: Routes = [
   {
@@ -29,7 +30,7 @@ const routes: Routes = [
     }
   }, {
     path: 'rsvp',
-    component: MarriageBaseComponent,
+    component: MarriageRsvpComponent,
     data: {
       direct: true
     }

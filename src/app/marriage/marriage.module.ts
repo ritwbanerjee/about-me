@@ -11,6 +11,7 @@ import { MarriageParallaxComponent } from './parallax/parallax.component';
 import { MarriageFamilyComponent } from './family/family.component';
 import { MarriageEventComponent } from './event/event.component';
 import { MarriageMapComponent } from './map/map.component';
+import { MarriageRsvpComponent } from './rsvp/rsvp.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { MarriageMapComponent } from './map/map.component';
     MarriageParallaxComponent,
     MarriageFamilyComponent,
     MarriageEventComponent,
-    MarriageMapComponent
+    MarriageMapComponent,
+    MarriageRsvpComponent
   ]
 })
 export class MarriageModule { }

@@ -1,0 +1,46 @@
+<app-marriage-navbar *ngIf="showNav"></app-marriage-navbar>
+<section class="rsvp-section">
+    <div class="row image-row">
+        <div class="col s6 offset-s3 banner">
+            <img src="../../../assets/headline_hearth.svg" alt="white hearth" class="upper-logo hide-on-small-only">
+            <img src="../../../assets/headline_simple.svg" alt="pink hearth" class="lower-logo hide-on-small-only">
+            <h3 class="title dancing-font"> <span class="custom-color">R</span>SVP</h3>
+        </div>
+
+        <div class="row subtitle">
+            <div class="col s10 m6 l6 offset-s1 offset-m3 offset-l3">
+                <p> We'd love to host you. Just fill in a simple form to let us know who you are and the number of guest who are accompanying you!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <form class="col s12 m8 offset-m2">
+            <div class="row">
+                <div class="input-field col s8 offset-s2 m6">
+                    <input id="name" type="text" class="validate">
+                    <label for="name">Name</label>
+                </div>
+
+                <div class="input-field col s8 offset-s2 m6">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s8 offset-s2 m6 offset-m3 ">
+                    <input id="count" type="text" class="validate">
+                    <label for="count">Number of Guests</label>
+                </div>
+            </div>
+        </form>
+
+        <div class="col s12 button-holder">
+            <button class="submit waves-effect waves-light">I am attending</button>
+        </div>
+
+    </div>
+                
+
+</section>
