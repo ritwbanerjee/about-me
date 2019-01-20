@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 
 export class MarriageMapComponent {
-    @Input() lat = 22.7064841;
-    @Input() lng = 88.3578812;
-    zoom = 13;
+    @Input() lat: number;
+    @Input() lng: number;
+    zoom = 17;
 }
