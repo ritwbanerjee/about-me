@@ -1,9 +1,38 @@
 <div class="banner">
-    <img src="../../../assets/header-logo.png" alt="sectionlogo" class="section-logo hide-on-med-and-down">
-    <h3 class="banner-title dancing-font">Our <span class="custom-color">Family</span></h3>
+  <img
+    src="../../../assets/header-logo.png"
+    alt="sectionlogo"
+    class="section-logo hide-on-med-and-down"
+  />
+  <h3 class="banner-title dancing-font">
+    Our <span class="custom-color">Family</span>
+  </h3>
 </div>
-<div class="row family">
-    <div class="col s10 m6 l6 offset-s1 offset-m3 offset-l3">
-        <p>Families play an important role in the upbringing of kids and we were blessed to have the most awesome people on earth to be a part of our lives. </p>
+<div class="row family center">
+  <div class="col s10 m6 l6 offset-s1 offset-m3 offset-l3">
+    <p>
+      Families play an important role in the upbringing of kids and we were
+      blessed to have the most awesome people on earth to be a part of our
+      lives.
+    </p>
+  </div>
+
+  <div class="row center">
+    <div
+      class="col s12 m4 offset-m1 family-logo-holder"
+      *ngFor="let item of family"
+    >
+      <h5 class="title">{{ item.title }}</h5>
+      <div class="row family-logo-row">
+        <div class="col s12 m3" *ngFor="let member of item.members">
+          <img
+            [src]="member.imageUrl"
+            alt="image"
+            class="family-members-logo"
+          />
+          <p class="name">{{ member.name }}</p>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
