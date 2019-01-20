@@ -78,6 +78,12 @@
     border: 1px solid #de037f;
 }
 
+.active .collapsible-header .panel-title {
+    color: #de037f;
+}
+
+
+
 .collapsible-header {
     display: flex;
     align-items: center;
@@ -90,4 +96,9 @@
 
 .collapsible-body {
     border: none;
+    padding-top: 0;
+}
+
+.quote {
+    font-size: 1.6rem;
 }
