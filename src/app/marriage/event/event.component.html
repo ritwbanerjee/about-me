@@ -22,7 +22,8 @@
             <h4 class="custom-color dancing-font title">{{ timeObject[panel].title }}</h4>
             <h5 class="dancing-font">{{ timeObject[panel].date }}</h5>
             <h5 class="dancing-font">{{ timeObject[panel].time }}</h5>
-            <h5 class="dancing-font">Venue: {{ timeObject[panel].venue }}</h5>
+            <h5 class="dancing-font venue">Venue: {{ timeObject[panel].venue }}</h5>
+            <a class="custom-color show-map dancing-font" (click)="scroll(mapview)" ><i class="fa fa-map-marker" aria-hidden="true"></i> Show Map</a>
         </div>
     </div>
     <div class="col s12 m4 offset-m1">
@@ -75,7 +76,7 @@
     </div>
 </div>
 
-<div class="row no-row-bottom-spacing">
+<div class="row no-row-bottom-spacing" #mapview>
     <div class="col s12">
         <app-marriage-map [lat]="timeObject[panel].lat" [lng]="timeObject[panel].lng"></app-marriage-map>
     </div>

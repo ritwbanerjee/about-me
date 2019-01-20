@@ -116,3 +116,22 @@
         margin-top: 10px;
     }
 }
+
+.venue{
+    margin-bottom: 40px;
+}
+
+.show-map {
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 20px;
+    cursor: pointer;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+
+    &:hover {
+        font-size: 26px;
+    }
+}

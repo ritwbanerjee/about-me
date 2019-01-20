@@ -62,4 +62,8 @@ export class MarriageEventComponent implements OnInit {
     openPanel(panel: string) {
         this.panel = panel;
     }
+
+    scroll(el) {
+        el.scrollIntoView({behavior: 'smooth'});
+    }
 }
