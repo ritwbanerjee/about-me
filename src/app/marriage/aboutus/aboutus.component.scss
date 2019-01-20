@@ -74,6 +74,10 @@
         align-items: center;
         padding: 5px 65px;
 
+        @media (min-width: 375px) and (max-width: 900px) {
+            padding: 5px 80px;
+        }
+
         .social-logo-holder {
             display: flex;
             justify-content: center;
