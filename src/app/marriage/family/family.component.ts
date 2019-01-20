@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { FamilyDetails } from './family.model';
 
 declare var jQuery: any;
@@ -12,6 +13,17 @@ declare var jQuery: any;
 export class MarriageFamilyComponent implements OnInit {
 
     family: FamilyDetails[];
+    showNav: boolean;
+
+    constructor(
+        private route: ActivatedRoute
+    ) {
+        this.route.data.subscribe((response: any) => {
+            if (response && response.direct) {
+                this.showNav = response.direct;
+            }
+        });
+    }
 
     ngOnInit() {
         this.family = [{

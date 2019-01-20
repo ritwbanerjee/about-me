@@ -9,6 +9,9 @@ declare var jQuery: any;
 
 export class NavBarComponent implements AfterViewInit {
 
+    navbar: any;
+    sticky: any;
+
     ngAfterViewInit() {
         jQuery('.sidenav').sidenav();
     }

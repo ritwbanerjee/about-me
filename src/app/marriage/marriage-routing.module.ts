@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MarriageBaseComponent } from './base/base.component';
-import { BannerComponent } from './banner/banner.component';
+import { MarriageAboutUsComponent } from './aboutus/aboutus.component';
+import { MarriageFamilyComponent } from './family/family.component';
+import { MarriageEventComponent } from './event/event.component';
 
 const routes: Routes = [
   {
@@ -9,19 +11,28 @@ const routes: Routes = [
     component: MarriageBaseComponent
   }, {
     path: 'aboutus',
-    component: MarriageBaseComponent
-  }, {
-    path: 'story',
-    component: MarriageBaseComponent
+    component: MarriageAboutUsComponent,
+    data: {
+      direct: true
+    }
   }, {
     path: 'people',
-    component: MarriageBaseComponent
+    component: MarriageFamilyComponent,
+    data: {
+      direct: true
+    }
   }, {
     path: 'event',
-    component: MarriageBaseComponent
+    component: MarriageEventComponent,
+    data: {
+      direct: true
+    }
   }, {
     path: 'rsvp',
-    component: MarriageBaseComponent
+    component: MarriageBaseComponent,
+    data: {
+      direct: true
+    }
   }
 ];
 

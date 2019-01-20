@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 declare var jQuery: any;
 
 @Component({
@@ -11,6 +12,20 @@ export class MarriageEventComponent implements OnInit {
 
     timeObject: object;
     panel: string;
+
+    showNav: boolean;
+
+    constructor(
+        private route: ActivatedRoute
+    ) {
+        this.route.data.subscribe((response: any) => {
+            console.log('Response: ', response);
+
+            if (response && response.direct) {
+                this.showNav = response.direct;
+            }
+        });
+    }
 
     ngOnInit() {
         jQuery('.collapsible').collapsible();
