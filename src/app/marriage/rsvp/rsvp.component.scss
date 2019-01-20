@@ -3,6 +3,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @media(max-width: 468px) {
+        background-position: right;
+    }
+
     .image-row {
         position: relative;
     }
