@@ -18,26 +18,26 @@
         <form class="col s12 m8 offset-m2">
             <div class="row">
                 <div class="input-field col s8 offset-s2 m6">
-                    <input id="name" type="text" class="validate">
+                    <input id="name" type="text" class="validate" [(ngModel)]="name" (ngModelChange)="check()" [ngModelOptions]="{standalone: true}">
                     <label for="name">Name</label>
                 </div>
 
                 <div class="input-field col s8 offset-s2 m6">
-                    <input id="email" type="email" class="validate">
+                    <input id="email" type="email" class="validate" [(ngModel)]="email" (ngModelChange)="check()" [ngModelOptions]="{standalone: true}">
                     <label for="email">Email</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s8 offset-s2 m6 offset-m3 ">
-                    <input id="count" type="text" class="validate">
+                    <input id="count" type="number" class="validate" [(ngModel)]="count" (ngModelChange)="check()" [ngModelOptions]="{standalone: true}">
                     <label for="count">Number of Guests</label>
                 </div>
             </div>
         </form>
 
         <div class="col s12 button-holder">
-            <button class="submit waves-effect waves-light">I am attending</button>
+            <button class="submit waves-effect waves-light" (click)="sendData()" [disabled]="disableButton" [ngClass]="{'disabled': disableButton}">I am attending</button>
         </div>
 
     </div>

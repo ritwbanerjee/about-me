@@ -17,7 +17,6 @@ export class WorkExperienceComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
 
-    console.log('work experience: ', this.workExperience);
   }
 
   ngAfterViewInit() {

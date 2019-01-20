@@ -17,8 +17,6 @@ export class MarriageAboutUsComponent implements AfterViewInit {
         private route: ActivatedRoute
     ) {
         this.route.data.subscribe((response: any) => {
-            console.log('Response: ', response);
-
             if (response && response.direct) {
                 this.showNav = response.direct;
             }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 
 import { MarriageRoutingModule } from './marriage-routing.module';
@@ -18,6 +19,7 @@ import { MarriageRsvpComponent } from './rsvp/rsvp.component';
   imports: [
     CommonModule,
     MarriageRoutingModule,
+    FormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBZRJY618_20Va6lFAgRcBaE0V9qkF5WYQ'
     })
