@@ -53,7 +53,7 @@ export class MarriageEventComponent implements OnInit {
             }
         };
 
-        this.panel = 'haldi';
+        this.panel = 'marriage';
     }
 
     openPanel(panel: string) {
