@@ -34,22 +34,25 @@ export class MarriageEventComponent implements OnInit {
                 title: 'Haldi Ceremony',
                 date: '28th January, 2019',
                 time: '7:30am Onwards ...',
-                lat: 22.6975203,
-                lng: 88.3533639
+                venue: '13/14, Bakultala Lane Konnagar',
+                lat: 22.6976751,
+                lng: 88.3527622
             },
             'marriage': {
                 title: 'Marriage',
                 date: '28th January, 2019',
                 time: '5:30pm Onwards ...',
-                lat: 22.7032588,
-                lng: 88.357817
+                venue: 'Konnagar Sammilani Club',
+                lat: 22.7024984,
+                lng: 88.3589058
             },
             'reception': {
                 title: 'Reception & Dinner',
                 date: '30th January, 2019',
                 time: '7:30pm Onwards ...',
-                lat: 22.7064841,
-                lng: 88.3578812
+                venue: 'Konnagar Sohardho Ceremony Hall',
+                lat: 22.7060714,
+                lng: 88.3578809
             }
         };
 
