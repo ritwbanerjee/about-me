@@ -102,3 +102,17 @@
 .quote {
     font-size: 1.6rem;
 }
+
+.time-holder {
+    text-align: center;
+    margin-left: 20%;
+
+    @media(max-width: 468px) {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .title {
+        margin-top: 10px;
+    }
+}
