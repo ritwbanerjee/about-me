@@ -1,0 +1,30 @@
+.banner {
+    background-color: white;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 90px 0 20px;
+    @media (max-width: 468px) {
+        padding: 20px 20px 0 20px;
+    }
+    .section-logo {
+        width: 50%;
+    }
+    .banner-title {
+        position: absolute;
+        bottom: 60px;
+        @media (max-width: 468px) {
+            bottom: 0;
+            position: relative;
+        }
+    }
+}
+
+.wedding-subtitle {
+    background-color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'roboto';
+}

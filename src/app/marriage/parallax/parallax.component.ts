@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
 declare var jQuery: any;
 
 @Component({
@@ -7,22 +7,12 @@ declare var jQuery: any;
     styleUrls: ['./parallax.component.scss']
 })
 
-export class MarriageParallaxComponent implements AfterViewInit, OnInit {
+export class MarriageParallaxComponent implements AfterViewInit {
 
     windowWidth: number;
-    imageUrl: string;
+    @Input() imageUrl: string;
 
     ngAfterViewInit() {
         jQuery('.parallax').parallax();
-    }
-
-    ngOnInit() {
-        this.windowWidth = window.innerWidth;
-
-        if (this.windowWidth <= 468) {
-            this.imageUrl = '../../../assets/konnagar.JPG';
-        } else {
-            this.imageUrl = '../../../assets/stairs.jpg';
-        }
     }
 }

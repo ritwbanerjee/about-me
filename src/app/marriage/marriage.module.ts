@@ -8,6 +8,7 @@ import { NavBarComponent } from './navbar/navbar.component';
 import { MarriageAboutUsComponent } from './aboutus/aboutus.component';
 import { MarriageParallaxComponent } from './parallax/parallax.component';
 import { MarriageFamilyComponent } from './family/family.component';
+import { MarriageEventComponent } from './event/event.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MarriageFamilyComponent } from './family/family.component';
     MarriageBaseComponent,
     MarriageAboutUsComponent,
     MarriageParallaxComponent,
-    MarriageFamilyComponent
+    MarriageFamilyComponent,
+    MarriageEventComponent
   ]
 })
 export class MarriageModule { }
