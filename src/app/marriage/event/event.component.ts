@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var jQuery: any;
 
 @Component({
     selector: 'app-marriage-event',
@@ -9,6 +10,6 @@ import { Component, OnInit } from '@angular/core';
 export class MarriageEventComponent implements OnInit {
 
     ngOnInit() {
-
+        jQuery('.collapsible').collapsible();
     }
 }
