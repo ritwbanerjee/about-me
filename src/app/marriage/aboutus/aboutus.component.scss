@@ -44,9 +44,14 @@
         margin-bottom: 40px;
 
         .profile-picture {
-            width: 250px;
-            height: 250px;
+            width: 338px;
+            height: 338px;
             border-radius: 50%;
+
+            @media (min-width: 320px) and (max-width: 900px) {
+                width: 200px;
+                height: 200px;
+            }
         }
 
         .sub-title-holder {
@@ -59,6 +64,47 @@
                 font-size: 20px;
                 font-weight: 300;
                 line-height: 2rem;
+            }
+        }
+    }
+
+    .social-holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 65px;
+
+        .social-logo-holder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 1px solid #d2d2d2;
+            margin-right: 10px;
+
+            @media (min-width: 320px) and (max-width: 900px) {
+                height: 35px;
+                width: 35px;
+            }
+
+            &:hover {
+                height:50px;
+                width: 50px;
+                cursor: pointer;
+                background: #d2d2d2;
+                opacity: 0.7;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 60%;
+                }
             }
         }
     }
