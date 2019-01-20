@@ -23,7 +23,8 @@
       class="col s12 m4 offset-m1 family-logo-holder"
       *ngFor="let item of family"
     >
-      <h5 class="title">{{ item.title }}</h5>
+      <h5 class="title dancing-font">{{ item.title }}</h5>
+      <img class="title-border hide-on-med-and-up" src="../../../assets/headline_simple.svg" alt="border">
       <div class="row family-logo-row">
         <div class="col s12 m3" *ngFor="let member of item.members">
           <img
