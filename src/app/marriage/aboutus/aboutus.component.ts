@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+declare var jQuery: any;
 
 @Component({
     selector: 'app-marriage-aboutus',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
     styleUrls: ['./aboutus.component.scss']
 })
 
-export class MarriageAboutUsComponent {
+export class MarriageAboutUsComponent implements AfterViewInit {
 
+    ngAfterViewInit() {
+        jQuery('.parallax').parallax();
+    }
 }

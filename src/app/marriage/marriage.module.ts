@@ -6,6 +6,8 @@ import { MarriageBaseComponent } from './base/base.component';
 import { BannerComponent } from './banner/banner.component';
 import { NavBarComponent } from './navbar/navbar.component';
 import { MarriageAboutUsComponent } from './aboutus/aboutus.component';
+import { MarriageParallaxComponent } from './parallax/parallax.component';
+import { MarriageFamilyComponent } from './family/family.component';
 
 
 @NgModule({
@@ -13,6 +15,13 @@ import { MarriageAboutUsComponent } from './aboutus/aboutus.component';
     CommonModule,
     MarriageRoutingModule
   ],
-  declarations: [BannerComponent, NavBarComponent, MarriageBaseComponent, MarriageAboutUsComponent]
+  declarations: [
+    BannerComponent,
+    NavBarComponent,
+    MarriageBaseComponent,
+    MarriageAboutUsComponent,
+    MarriageParallaxComponent,
+    MarriageFamilyComponent
+  ]
 })
 export class MarriageModule { }
