@@ -55,6 +55,7 @@
         z-index: 3;
         font-family: 'Dancing Script', cursive;
         text-align: center;
+        margin-top: -70px;
     }
 
     .text-holder {
@@ -79,12 +80,10 @@
         width: 690px;
         height: 260px;
         position: absolute;
-        top: 23rem;
 
         @media (max-width: 468px) {
-            background-size: contain;
+            background-size: cover;
             background-position: center;
-            top: 21rem;
         }
     }
 }
