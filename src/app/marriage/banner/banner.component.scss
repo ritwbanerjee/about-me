@@ -17,8 +17,9 @@
         top: 0;
         width: 100%;
         z-index: 2;
+        background: url("../../../assets/chitradurga-2.jpg");
         background-size: cover;
-        opacity: 0.6;
+        opacity: 0.5;
 
         @media (max-width: 468px) {
             background: url("../../../assets/milestone.jpg");
