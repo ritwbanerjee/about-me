@@ -12,17 +12,29 @@ export class SkillsComponent implements OnInit {
 
   constructor() {
     this.skills = [{
-      label: 'Communication',
+      label: 'Angular 2+',
       value: '100%'
     }, {
-      label: 'Collaboration',
+      label: 'HTML 5',
       value: '100%'
     }, {
-      label: 'Leadership',
+      label: 'CSS3',
       value: '90%'
     }, {
-      label: 'Man Management',
+      label: 'JAVASCRIPT',
+      value: '100%'
+    }, {
+      label: 'TYPESCRIPT',
+      value: '100%'
+    }, {
+      label: 'NODEJS',
       value: '80%'
+    }, {
+      label: 'EXPRESSJS',
+      value: '100%'
+    }, {
+      label: 'Microsoft Azure B2C',
+      value: '70%'
     }];
    }
 
