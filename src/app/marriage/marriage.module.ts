@@ -6,7 +6,7 @@ import { AgmCoreModule } from '@agm/core';
 import { MarriageRoutingModule } from './marriage-routing.module';
 import { MarriageBaseComponent } from './base/base.component';
 import { BannerComponent } from './banner/banner.component';
-import { NavBarComponent } from './navbar/navbar.component';
+import { NavBarModule } from '../modules/navbar/navbar.module';
 import { MarriageAboutUsComponent } from './aboutus/aboutus.component';
 import { MarriageParallaxComponent } from './parallax/parallax.component';
 import { MarriageFamilyComponent } from './family/family.component';
@@ -22,11 +22,11 @@ import { MarriageRsvpComponent } from './rsvp/rsvp.component';
     FormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBZRJY618_20Va6lFAgRcBaE0V9qkF5WYQ'
-    })
+    }),
+    NavBarModule
   ],
   declarations: [
     BannerComponent,
-    NavBarComponent,
     MarriageBaseComponent,
     MarriageAboutUsComponent,
     MarriageParallaxComponent,

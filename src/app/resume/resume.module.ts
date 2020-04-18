@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { NavBarModule } from '../modules/navbar/navbar.module';
 import { ResumeRoutingModule } from './resume-routing.module';
 import { ResumeComponent } from './resume/resume.component';
 import { ImageHolderComponent } from './image-holder/image-holder.component';
@@ -12,6 +12,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 @NgModule({
   imports: [
     CommonModule,
+    NavBarModule,
     ResumeRoutingModule
   ],
   declarations: [ResumeComponent, ImageHolderComponent, PersonalDetailsComponent, SkillsComponent, LanguagesComponent, WorkExperienceComponent]

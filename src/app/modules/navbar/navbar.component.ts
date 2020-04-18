@@ -2,7 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 declare var jQuery: any;
 
 @Component({
-    selector: 'app-marriage-navbar',
+    selector: 'navbar',
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss']
 })
