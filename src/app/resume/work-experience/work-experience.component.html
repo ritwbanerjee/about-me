@@ -5,7 +5,7 @@
   </p>
 
   <ul class="collapsible">
-    <li *ngFor="let item of workExperience">
+    <li *ngFor="let item of workExperience, let i=index" [ngClass]="{'active': i === 0}">
       <p class="collapsible-header work-experience-title no-col-gutter bold font-size-medium app-theme-color no-row-bottom-spacing no-row-top-spacing">
         <img [src]="item.imgUrl" class="work-experience-company-logo"/>
         {{ item.title }}
