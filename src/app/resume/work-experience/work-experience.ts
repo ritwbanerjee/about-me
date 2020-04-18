@@ -1,10 +1,45 @@
 export const WorkExperience  = [
     {
-        title: 'Senior Front End Developer',
-        company: 'Deloitte Consulting GmBH',
-        fromDate: '01/07/2018',
+        title: 'Senior Front End Developer, Germany',
+        company: 'Allianz Technology SE, München, Germany',
+        fromDate: '01/03/2019',
         toDate: 'Current',
         isCurrent: true,
+        imgUrl: '../../../assets/allianz-logo.png',
+        achievements: [
+            {
+                desc: 'Senior Front End Developer assisting with the design evolution of Allianz Direct Platform'
+            }, {
+                desc: 'Design and create the Self Service Portal for Allianz Direct Customers.'
+            }, {
+                desc: 'Create the Identity Management Platform for Allianz Direct using Microsoft Azure B2C',
+            }, {
+                desc: 'Manage Allianz Direct Customers Identity and develop Data Driven User Experience for a smooth use of the portal'
+            }, {
+                desc: 'Maintain seamless user experience across all resolutions for the Allianz Direct Platform'
+            }, {
+                desc: 'Maintained AA standards of accessibility'
+            }, {
+                desc: 'Unit Test the platform using JEST' 
+            }, {
+                desc: 'Develop E2E testing for the self service portal using JEST, Protractor'
+            }, {
+                desc: 'Follow Agile Methodologies and Scrums to deliver Projects without any timeline issues'
+            }, {
+                desc: 'Source Code Control using Github'
+            }, {
+                desc: 'CI/CD control using Jenkins'
+            }, {
+                desc: 'LogManagement Kibana'
+            }
+        ]
+    },
+    {
+        title: 'Technology Consultant, Germany',
+        company: 'Deloitte Consulting GmBH, München, Germany',
+        fromDate: '01/07/2018',
+        toDate: '28/02/2019',
+        isCurrent: false,
         imgUrl: '../../../assets/deloitte-logo.jpeg',
         achievements: [
             {
@@ -31,8 +66,8 @@ export const WorkExperience  = [
         ]
     },
     {
-        title: 'Front End Developer',
-        company: 'Deloitte Consulting India Pvt Ltd.',
+        title: 'Technology Consultant, India',
+        company: 'Deloitte Consulting India Pvt Ltd, Bangalore, India',
         fromDate: '01/09/2017',
         toDate: '31/06/2018',
         isCurrent: false,
@@ -68,8 +103,8 @@ export const WorkExperience  = [
         ]
     },
     {
-        title: 'Junior Front End Developer',
-        company: 'Deloitte Consulting India Pvt Ltd.',
+        title: 'Business Technology Analyst, India ',
+        company: 'Deloitte Consulting India Pvt Ltd, Bangalore, India',
         fromDate: '05/01/2015',
         toDate: '31/08/2017',
         isCurrent: false,
@@ -101,7 +136,7 @@ export const WorkExperience  = [
         ]
     },
     {
-        title: 'FreeLance Front End Developer',
+        title: 'FreeLance Developer, Bangalore, India',
         company: 'Cretechs Consulting',
         fromDate: '01/08/2017',
         toDate: '31/12/2017',
