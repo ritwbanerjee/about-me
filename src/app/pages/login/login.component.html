@@ -1,0 +1,22 @@
+<navbar></navbar>
+<div class="login-form">
+    <login-template>
+        <form [formGroup]="loginForm" class="form">
+            <div *ngFor="let item of loginOptions" class="form-row row no-row-bottom-spacing" >
+                <div class="col s12 m3">
+                    <span> {{ item.label }} </span>
+                </div>
+                <div class="col s12 m9">
+                    <input [type]="item.type" placeholder="{{item.placeholder}}" formControlName="{{item.id}}">
+                </div>
+            </div>
+
+            <div class="button-holder row">
+                <div class="col m9 offset-m3">
+                    <span class="forgot-password">Forgot Password ?</span>
+                    <button class="primary-btn" (click) = "onSubmit()" [disabled]="!isSubmitButtonActive">Login</button>
+                </div>
+            </div>
+        </form>
+    </login-template>
+</div>

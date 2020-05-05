@@ -9,6 +9,14 @@ const routes: Routes = [
   {
     path: 'aboutme',
     loadChildren: './resume/resume.module#ResumeModule'
+  },
+  {
+    path: 'login',
+    loadChildren: './pages/login/login.module#LoginModule'
+  },
+  {
+    path: 'signup',
+    loadChildren: './pages/signup/signup.module#SignUpModule'
   }
 ];
 
